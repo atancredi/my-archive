@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  font-family: ronzino, 'Times New Roman', Times, serif;
+
+  /* color-scheme: light dark; */
+
+
+
+  --text-sm: calc(1rem / 1.2);
+  --text: calc(1rem);
+  --text-lg: calc(1rem * 1.2);
+  --text-xl: calc(1rem * 1.2 * 1.2);
+  --text-2xl: calc(1rem * 1.2 * 1.2 * 1.2);
+  --text-3xl: calc(1rem * 1.2 * 1.2 * 1.2 * 1.2);
+  --text-4xl: calc(1rem * 1.2 * 1.2 * 1.2 * 1.2 * 1.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow: hidden; /* Prevent the body from scrolling independently of your container */
+  height: 100%;
+  
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide the body's scrollbar */
+
+  /* this sets the mobile navbar to black */
+  background: #000;
+}
+
+html {
+	box-sizing: border-box
+}
+
+*::before, *::after {
+	box-sizing: inherit
+}
+
+
+.noselect {
+  -webkit-user-select: none;
+  user-select: none;
+}
