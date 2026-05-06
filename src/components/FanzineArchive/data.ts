@@ -47,7 +47,7 @@ const apr26Fanzine: IPage[] = [
 	// {imageUrl: 'fanzines/apr26/DSCF8101_resized_1250_dithered_16.png', },
 ]
 
-const cipollottiFanzine: IPage[] = [ // TODO SISTEMARE
+const cipollottiFanzine: IPage[] = [ 
 	{ imageUrl: 'fanzines/cipollotti/DSCF7977.JPG_resized_1250_dithered_8.png', },
 	{ imageUrl: 'fanzines/cipollotti/DSCF7963.JPG_resized_1250_dithered_16.png', },
 	{ imageUrl: 'fanzines/cipollotti/DSCF7968.JPG_resized_1250_dithered_8.png', },
@@ -74,6 +74,18 @@ const denhaagFanzine: IPage[] = [
 ]
 
 
+const DMC2026Fanzine: IPage[] = [
+	{imageUrl: "fanzines/dmc26/DSCF8139_resized_1250_dithered_8.png"},
+	{imageUrl: "fanzines/dmc26/DSCF8126_resized_1250_dithered_8.png"},
+	{imageUrl: "fanzines/dmc26/DSCF8131_resized_1250_dithered_16.png"},
+	{imageUrl: "fanzines/dmc26/DSCF8147_resized_1250_dithered_8.png"},
+	{imageUrl: "fanzines/dmc26/DSCF8140_resized_1250_dithered_4.png"},
+	{imageUrl: "fanzines/dmc26/DSCF8154_resized_1250_dithered_8.png"},
+	{imageUrl: "fanzines/dmc26/DSCF8153_resized_1250_dithered_8.png"},
+	{imageUrl: "fanzines/dmc26/DSCF8157_resized_1250_dithered_16.png"},
+]
+
+
 export interface IFanzineData {
 	id: string
 	pages: IPage[]
@@ -84,6 +96,7 @@ export interface IFanzineData {
 }
 
 export const fanzineData: IFanzineData[] = [
+	{ id:"dmc2026", pages: DMC2026Fanzine, "title": "DMC 2026", "subtitle": "02/05/26 - bologna"},
 	{ id: "apr26", pages: apr26Fanzine, "title": "☜(⌒▽⌒)☞", "subtitle": "04/26 - pisa"  },
 	{ id: "cipollotti", pages: cipollottiFanzine, "title": "green onions", "subtitle": "eatin so much"  },
 	{ id: "denhaag", pages: denhaagFanzine, "title": "chillin in den haag", "subtitle": "03/26"  },
